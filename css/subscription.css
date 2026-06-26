@@ -1,0 +1,168 @@
+/* ==========================================
+   SUBSCRIPTION PANEL SPECIFIC STYLING
+   ========================================== */
+
+/* Welcome Banner (lavender blue rectangle) */
+.welcome-banner {
+  background: #585CA2;
+  border-radius: 0;
+  padding: 24px 60px;
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: -40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  width: calc(100% + 120px);
+}
+
+.welcome-banner h1, .welcome-banner h1.welcome-user-heading {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Subscription Pricing Section */
+.subscription-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.subscription-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.subscription-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sub-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.sub-card.popular {
+  border: 2px solid #3b82f6;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+}
+
+.sub-badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sub-badge.popular {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.sub-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.sub-card .price {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sub-card .price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.sub-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+.sub-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-features i {
+  color: #10b981;
+  font-size: 14px;
+}
+
+.btn-sub {
+  background: #334155;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-sub:hover {
+  background: #1e293b;
+}
+
+.sub-card.popular .btn-sub {
+  background: #3b82f6;
+}
+
+.sub-card.popular .btn-sub:hover {
+  background: #2563eb;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-banner {
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    width: calc(100% + 40px);
+  }
+  
+  .subscription-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

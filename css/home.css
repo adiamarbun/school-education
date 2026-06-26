@@ -1,0 +1,382 @@
+/* ==========================================
+   HOME PANEL SPECIFIC STYLING
+   ========================================== */
+
+/* Welcome Banner Card (Blue/purple card) */
+.welcome-banner-card {
+  background: #585CA2;
+  border-radius: 0;
+  padding: 30px 60px;
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: -40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+.welcome-heading-serif {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.welcome-subheading {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 24px;
+}
+
+/* Subscription Status alert box */
+.subscription-status-box {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 10px;
+}
+
+.subscription-status-box h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.status-alert-bar {
+  background: white;
+  border-radius: 4px;
+  padding: 14px 20px;
+  color: #1e293b;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.status-alert-bar span {
+  display: block;
+}
+
+.status-alert-bar a {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.status-alert-bar a:hover {
+  color: #2563eb;
+}
+
+/* Progres Belajar Section */
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progress-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.progress-tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab-btn {
+  background: #cbd5e1;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: #cbd5e1;
+  color: #0f172a;
+}
+
+.tab-btn.active {
+  background: #e2e8f0;
+  color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Progress List Container (Large Gray Box) */
+.progress-list-container {
+  background: #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.list-header-banner {
+  font-size: 18px;
+  font-weight: 700;
+  color: #334155;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.progress-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual progress card */
+.progress-card {
+  background: white;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  border-left: 5px solid #64748b;
+  transition: transform 0.2s ease;
+}
+
+.progress-card:hover {
+  transform: translateX(4px);
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.card-icon.coding {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.card-icon.robotics {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.card-icon.science {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.card-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.card-info p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.card-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.progress-bar-container {
+  width: 120px;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-percentage {
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+  width: 35px;
+  text-align: right;
+}
+
+.btn-continue {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.btn-continue:hover {
+  background: #2563eb;
+}
+
+.completed-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #15803d;
+  background: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.btn-certificate {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.btn-certificate:hover {
+  background: #059669;
+}
+
+/* Explore Events Section */
+.explore-events-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.explore-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.explore-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.explore-card:hover {
+  transform: translateY(-3px);
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.explore-card-icon {
+  font-size: 32px;
+  color: #3b82f6;
+  margin-bottom: 12px;
+}
+
+.explore-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.explore-card p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Footer elements */
+.db-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.db-footer-line {
+  border: 0;
+  border-top: 1.5px solid #e2e8f0;
+}
+
+.db-footer-text {
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-banner-card {
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+  }
+  
+  .welcome-heading-serif {
+    font-size: 22px;
+  }
+  
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
