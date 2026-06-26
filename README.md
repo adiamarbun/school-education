@@ -33,7 +33,7 @@ education_tbotics/
 │   ├── profile.js
 │   ├── script.js       # Logika utama/global
 │   └── subscription.js
-└── indeks.html         # Halaman utama aplikasi (Entrypoint)
+└── index.html         # Halaman utama aplikasi (Entrypoint)
 ```
 
 ## 💻 Cara Menjalankan secara Lokal
@@ -48,14 +48,14 @@ Buka terminal/PowerShell di direktori proyek ini dan jalankan:
 ```bash
 python -m http.server 8000
 ```
-Lalu buka browser dan akses `http://localhost:8000/indeks.html`.
+Lalu buka browser dan akses `http://localhost:8000/index.html`.
 
 #### Menggunakan Node.js (npx):
 Jika Anda memiliki Node.js terinstal, Anda bisa menjalankan:
 ```bash
 npx http-server -p 8000
 ```
-Lalu buka browser dan akses `http://localhost:8000/indeks.html`.
+Lalu buka browser dan akses `http://localhost:8000/index.html`.
 
 ### Cara 2: Membuka File HTML Langsung
-Anda juga dapat mengklik dua kali berkas `indeks.html` untuk membukanya langsung di browser (menggunakan protokol `file://`), namun beberapa fitur autentikasi Firebase tingkat lanjut mungkin memerlukan server lokal (Cara 1).
+Anda juga dapat mengklik dua kali berkas `index.html` untuk membukanya langsung di browser (menggunakan protokol `file://`), namun beberapa fitur autentikasi Firebase tingkat lanjut mungkin memerlukan server lokal (Cara 1).
