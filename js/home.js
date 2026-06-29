@@ -112,7 +112,7 @@ const homeHTML = `
 // HOME MODULE INITIALIZATION
 // ==========================================
 function initHomeModule() {
-  const paneHome = document.getElementById('pane-home');
+  const paneHome = document.getElementById("pane-home");
   if (paneHome) {
     paneHome.innerHTML = homeHTML;
     setupHomeEvents();
@@ -121,63 +121,63 @@ function initHomeModule() {
 
 function setupHomeEvents() {
   // Bind progress tabs (Started vs Completed)
-  const tabStarted = document.getElementById('tab-started');
-  const tabCompleted = document.getElementById('tab-completed');
-  const listStarted = document.getElementById('list-started');
-  const listCompleted = document.getElementById('list-completed');
+  const tabStarted = document.getElementById("tab-started");
+  const tabCompleted = document.getElementById("tab-completed");
+  const listStarted = document.getElementById("list-started");
+  const listCompleted = document.getElementById("list-completed");
 
   if (tabStarted && tabCompleted && listStarted && listCompleted) {
-    tabStarted.addEventListener('click', () => {
-      tabStarted.classList.add('active');
-      tabCompleted.classList.remove('active');
-      listStarted.classList.remove('hidden');
-      listCompleted.classList.add('hidden');
+    tabStarted.addEventListener("click", () => {
+      tabStarted.classList.add("active");
+      tabCompleted.classList.remove("active");
+      listStarted.classList.remove("hidden");
+      listCompleted.classList.add("hidden");
     });
 
-    tabCompleted.addEventListener('click', () => {
-      tabCompleted.classList.add('active');
-      tabStarted.classList.remove('active');
-      listCompleted.classList.remove('hidden');
-      listStarted.classList.add('hidden');
+    tabCompleted.addEventListener("click", () => {
+      tabCompleted.classList.add("active");
+      tabStarted.classList.remove("active");
+      listCompleted.classList.remove("hidden");
+      listStarted.classList.add("hidden");
     });
   }
 
   // Bind explore cards (Redirects to respective navbar tabs)
-  const exploreEventsCard = document.getElementById('explore-events-card');
-  const exploreChallengesCard = document.getElementById('explore-challenges-card');
+  const exploreEventsCard = document.getElementById("explore-events-card");
+  const exploreChallengesCard = document.getElementById("explore-challenges-card");
 
   if (exploreEventsCard) {
-    exploreEventsCard.addEventListener('click', () => {
-      const headerMenuEvent = document.getElementById('db-menu-event');
+    exploreEventsCard.addEventListener("click", () => {
+      const headerMenuEvent = document.getElementById("db-menu-event");
       if (headerMenuEvent) headerMenuEvent.click();
     });
   }
   if (exploreChallengesCard) {
-    exploreChallengesCard.addEventListener('click', () => {
-      const headerMenuChallenge = document.getElementById('db-menu-challenge');
+    exploreChallengesCard.addEventListener("click", () => {
+      const headerMenuChallenge = document.getElementById("db-menu-challenge");
       if (headerMenuChallenge) headerMenuChallenge.click();
     });
   }
-  
+
   // Bind resubscribe redirect link
-  const linkResubscribe = document.getElementById('link-resubscribe');
+  const linkResubscribe = document.getElementById("link-resubscribe");
   if (linkResubscribe) {
-    linkResubscribe.addEventListener('click', (e) => {
+    linkResubscribe.addEventListener("click", (e) => {
       e.preventDefault();
       // Clear navbar selection and trigger langganan pane
-      document.querySelectorAll('.db-menu-item').forEach(item => item.classList.remove('active'));
+      document.querySelectorAll(".db-menu-item").forEach((item) => item.classList.remove("active"));
       // In js/script.js, we have switchPane. We can trigger it by navigating to langganan.
       // Simply trigger a click on the resubscribe dynamic link if it gets replaced,
       // or switch pane manually.
-      if (typeof switchPane === 'function') {
-        switchPane('daftar-langganan');
+      if (typeof switchPane === "function") {
+        switchPane("daftar-langganan");
       }
-      if (typeof showToast === 'function') {
-        showToast('Membuka menu Langganan TBotics...', 'info');
+      if (typeof showToast === "function") {
+        showToast("Membuka menu Langganan TBotics...", "info");
       }
     });
   }
 }
 
 // Render on page load
-document.addEventListener('DOMContentLoaded', initHomeModule);
+document.addEventListener("DOMContentLoaded", initHomeModule);
